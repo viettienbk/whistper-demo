@@ -1,0 +1,38 @@
+<html>
+    <head>
+      <title>Whisper Demo</title>
+      <link rel="stylesheet" href="css/app.css">
+      <script src="js/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/web3.js"></script>
+      <script src="js/index.js"></script>
+    </head>
+    <body class="container">
+        <h3>Whisper Example</h3>
+  
+        <div role="tabpanel" class="tab-pane" id="communication">
+            <div id="communication-controls">
+                <h3>Listen To channel</h3>
+                <div class="form-group form-inline listen">
+                    <input type="text" class="channel text form-control" placeholder="channel">
+                    <button class="listenToChannel set btn btn-primary">Start Listening</button>
+                    <div id="subscribeList"></div>
+                    <p>messages received:<p>
+                    <div id="messagesList"></div>
+                </div>
+
+                <h3>Send Message</h3>
+                <div class="form-group form-inline send">
+                    <input type="text" class="channel text form-control" placeholder="channel">
+                    <input type="text" class="message text form-control" placeholder="message">
+                    <button class="sendMessage set btn btn-primary">Send Message</button>
+                </div>
+
+                <p>Javascript calls being made: </p>
+                <div class="logs">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+  
